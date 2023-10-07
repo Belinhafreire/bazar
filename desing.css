@@ -1,0 +1,537 @@
+/* Defina as margens do body como zero para remover o espaçamento */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFAF4;
+}
+
+
+
+/* Estilos para o header e a navegação */
+header {
+    background-color: #8BA39D;
+    color:black;
+    padding: 5px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    
+}
+
+.logo a {
+    text-decoration: none;
+    color: #39054e; /* Cor do link, ajuste conforme necessário */
+    font-weight: bold; /* Texto em negrito */
+    font-size:xx-large; 
+    transition: color 0.3s; /* Efeito de transição de cor ao passar o mouse */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Torna os itens da lista flexíveis (um ao lado do outro) */
+}
+
+nav li {
+    margin-right: 20px; /* Espaçamento entre os itens de navegação */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight:800;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilo para a imagem em tela cheia */
+main {
+    text-align: center; /* Centraliza horizontalmente a imagem */
+}
+
+img {
+    width: 100%; /* A imagem ocupa 100% da largura da tela */
+    max-height: 90vh; /* Limita a altura para 90% da altura da tela */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre toda a área */
+    opacity: 0.9; /* Defina o valor de opacidade desejado, por exemplo, 0.7 para 70% de opacidade */
+}
+
+/* Estilo para o container */
+.container {
+    position: relative;
+    text-align: center; /* Centraliza horizontalmente o conteúdo */
+}
+
+/* Estilo para o botão */
+.overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px; /* Aumente o tamanho do botão ajustando o padding */
+    background-color:#B7855C;
+    color: #111111;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    font-size:x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+
+h1 {
+    font-size:xx-large ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(2, 3, 0);
+    text-align:left;
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaço inferior */
+    margin: 0%;
+}
+
+h3 {
+    font-size:xx-large ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(2, 3, 0);
+    text-align:left;
+    background-color: #d5cef7; /* Cor de fundo desejada */
+    color: #000000; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaço inferior */
+    margin: 0%;
+}
+
+
+
+
+.subcategoria-seminovas {
+    margin-top: 20px; /* Espaço superior entre subcategorias */
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+   font-size: x-large;
+   margin-left:5%;
+}
+
+.subcategoria-seminovas h1{
+    color: #004634;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.subcategoria-usadas {
+    margin-top: 20px; /* Espaço superior entre subcategorias */
+    font-family: 'Times New Roman', Times, serif;
+    color: #ebfff4;
+    font-size: x-large;
+    margin-left:5%;
+}
+
+.subcategoria-novas {
+    margin-top: 20px; /* Espaço superior entre subcategorias */
+    font-family: 'Times New Roman', Times, serif;
+    color: #effff6;
+    font-size: x-large;
+    margin-left:5%;
+}
+
+/* Estilos para o contêiner das roupas */
+.roupas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto das legendas */
+}
+
+
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.categoria {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+}
+
+.categoria img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.categoria h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.categoria p {
+    font-size: 16px;
+}
+
+.frase-inspiradora {
+    flex: 1;
+    text-align: center;
+}
+
+.frase-inspiradora p {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+}
+
+
+/* Estilos para o bloco de introdução */
+.intro-block {
+    background-color: #e3dcf5; /* Cor de fundo cinza claro */
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.intro-block h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+    text-align: center;
+}
+
+/* Estilos para o bloco de introdução */
+.intro-block {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro-block h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.intro-block p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilos para o container dos produtos */
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o título do produto */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilos para a descrição do produto */
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos para as imagens dos produtos */
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Efeito de hover no produto */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.categoria a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #B7855C; 
+}
+
+.categoria a:hover {
+    color: #B7855C; 
+}
+/* Estilos para as categorias */
+
+.objetivo {
+    background-color: #8BA39D;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+}
+
+.objetivo h2 {
+    font-size: 28px;
+    color: #024b41;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.objetivo p {
+    font-size: 18px;
+    color: #0f0f0f;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif
+}
+
+/*PAG FALE CONOSCO E LOCALIZAÇÃO*/
+/* Estilos para o formulário de contato */
+
+.formulario p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #004634;
+    font-size: large;
+}
+
+.contato {
+    
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario, .localizacao {
+    flex: 1;
+    text-align: center;
+}
+
+.formulario h2, .localizacao h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.formulario form {
+    text-align: left;
+}
+
+.formulario label {
+    font-weight: bold;
+    color: #B7855C;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario button {
+    background-color: #B7855C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #B7855C;
+}
+
+
+
+.localizacao .mapa {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #024b41;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+/* Defina estilos para quando a tela tiver largura menor ou igual a 768px (tamanhos podem variar) */
+@media (max-width: 768px) {
+    /* Aplique um estilo para a localização, como torná-la uma caixa de bloco */
+    .localizacao {
+        display: block;
+    }
+    /* Aplique margem inferior ao formulário para criar espaço */
+    .formulario {
+        margin-top: 20px;
+    }
+}
+
+
+
+/*PAG TRABALHE CONOSOCO*/
+/* Estilos para o formulário de "Trabalhe Conosco" / "Venda sua Roupa" */
+
+.formulario-trabalhe {
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario-trabalhe h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.formulario-trabalhe form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario-trabalhe label {
+    font-weight: bold;
+    color: #B7855C;
+}
+
+.formulario-trabalhe input, .formulario-trabalhe textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-trabalhe button {
+    background-color: #B7855C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.formulario-trabalhe button:hover {
+    background-color: #B7855C;
+}
+
+/* Estilos para a página "Sobre Mim" */
+
+.sobre-mim {
+    text-align: center;
+    padding: 20px;
+}
+
+.sobre-mim h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.perfil img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%; /* Para tornar a foto circular */
+    object-fit: cover;
+    border: 5px solid #1e0466;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; 
+}
+
+.sobre-mim p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding: auto;
+}
+
+.redes-sociais {
+    margin-top: 35px;
+}
+
+.icone-rede-sociais {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.icone-rede-sociais img {
+    width: 100%;
+    height: auto;
+}
+
+.icone-rede-sociais:hover {
+    background-color: #1e0466;
+    border-color: #1e0466;
+}
+
+/* Estilos para o rodapé */
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoes,
+.redes-sociais {
+    flex: 1;
+    text-align: center;
+}
+
+.informacoes p,
+.redes-sociais a {
+    font-size: 16px;
+    color: #fff; /* Defina a cor do texto para branco (#fff) */
+}
+
+.direitos-autorais {
+    text-align: center;
+    margin-top: 20px;
+}
+
